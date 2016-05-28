@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>初編 | Konan&#39;s Blog</title>
+  <title>AFN加入HTTPS支持 | Konan&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天闲得没事抓个接口玩玩，发现post参数中带’/‘，charles看了app是全编码转义的（!$&amp;amp;’()+,/:;=?@~）例： /  -&amp;gt; %2F。看了半天找到了afn设置Parameters编码的方法，stackoverflow上找到了答案~~.">
+  <meta name="description" content="HTTPS学习 ：首先上几篇文章
+http://oncenote.com/2014/10/21/Security-1-HTTPS/http://www.jianshu.com/p/544c0a2d47f4http://www.jianshu.com/p/c6a903da8346接下来是AFN支持HTTPS方法,留着备用.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初編">
-<meta property="og:url" content="http://yoursite.com/2016/04/20/初編/index.html">
+<meta property="og:title" content="AFN加入HTTPS支持">
+<meta property="og:url" content="http://yoursite.com/2016/05/28/AFN加入HTTPS支持/index.html">
 <meta property="og:site_name" content="Konan's Blog">
-<meta property="og:description" content="今天闲得没事抓个接口玩玩，发现post参数中带’/‘，charles看了app是全编码转义的（!$&amp;amp;’()+,/:;=?@~）例： /  -&amp;gt; %2F。看了半天找到了afn设置Parameters编码的方法，stackoverflow上找到了答案~~.">
-<meta property="og:updated_time" content="2016-05-12T16:20:29.000Z">
+<meta property="og:description" content="HTTPS学习 ：首先上几篇文章
+http://oncenote.com/2014/10/21/Security-1-HTTPS/http://www.jianshu.com/p/544c0a2d47f4http://www.jianshu.com/p/c6a903da8346接下来是AFN支持HTTPS方法,留着备用.">
+<meta property="og:updated_time" content="2016-05-28T14:55:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初編">
-<meta name="twitter:description" content="今天闲得没事抓个接口玩玩，发现post参数中带’/‘，charles看了app是全编码转义的（!$&amp;amp;’()+,/:;=?@~）例： /  -&amp;gt; %2F。看了半天找到了afn设置Parameters编码的方法，stackoverflow上找到了答案~~.">
+<meta name="twitter:title" content="AFN加入HTTPS支持">
+<meta name="twitter:description" content="HTTPS学习 ：首先上几篇文章
+http://oncenote.com/2014/10/21/Security-1-HTTPS/http://www.jianshu.com/p/544c0a2d47f4http://www.jianshu.com/p/c6a903da8346接下来是AFN支持HTTPS方法,留着备用.">
   
     <link rel="alternative" href="/atom.xml" title="Konan&#39;s Blog" type="application/atom+xml">
   
@@ -230,11 +233,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-初編" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-AFN加入HTTPS支持" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/20/初編/" class="article-date">
-      <time datetime="2016-04-20T02:55:28.000Z" itemprop="datePublished">2016-04-20</time>
+      <a href="/2016/05/28/AFN加入HTTPS支持/" class="article-date">
+      <time datetime="2016-05-28T14:43:00.000Z" itemprop="datePublished">2016-05-28</time>
 </a>
     </div>
   
@@ -247,7 +250,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      初編
+      AFN加入HTTPS支持
     </h1>
   
 
@@ -256,7 +259,7 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/杂记/">杂记</a>
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
     </div>
 
 
@@ -268,10 +271,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>今天闲得没事抓个接口玩玩，发现post参数中带’/‘，charles看了app是全编码转义的（!$&amp;’()+,/:;=?@~）例： /  -&gt; %2F。看了半天找到了afn设置Parameters编码的方法，stackoverflow上找到了答案~~.</p>
+        <p>HTTPS学习 ：<br>首先上几篇文章</p>
+<p><a href="http://oncenote.com/2014/10/21/Security-1-HTTPS/" target="_blank" rel="external">http://oncenote.com/2014/10/21/Security-1-HTTPS/</a><br><a href="http://www.jianshu.com/p/544c0a2d47f4" target="_blank" rel="external">http://www.jianshu.com/p/544c0a2d47f4</a><br><a href="http://www.jianshu.com/p/c6a903da8346" target="_blank" rel="external">http://www.jianshu.com/p/c6a903da8346</a><br>接下来是AFN支持HTTPS方法,留着备用.</p>
 <a id="more"></a>
-<p>代码如下：</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="built_in">NSString</span>* form_urlencode_HTTP5_Parameters(<span class="built_in">NSDictionary</span>* parameters)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">NSMutableString</span>* result = [[<span class="built_in">NSMutableString</span> alloc] init];</span><br><span class="line"><span class="built_in">BOOL</span> isFirst = <span class="literal">YES</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">NSString</span>* name <span class="keyword">in</span> parameters) &#123;</span><br><span class="line"><span class="keyword">if</span> (!isFirst) &#123;</span><br><span class="line">[result appendString:<span class="string">@"&amp;"</span>];</span><br><span class="line">&#125;</span><br><span class="line">isFirst = <span class="literal">NO</span>;</span><br><span class="line">assert([name isKindOfClass:[<span class="built_in">NSString</span> class]]);</span><br><span class="line"><span class="built_in">NSString</span>* value = parameters[name];</span><br><span class="line">assert([value isKindOfClass:[<span class="built_in">NSString</span> class]]);</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSString</span>* encodedName = form_urlencode_HTTP5_String(name);</span><br><span class="line"><span class="built_in">NSString</span>* encodedValue = form_urlencode_HTTP5_String(value);</span><br><span class="line">[result appendString:encodedName];</span><br><span class="line">[result appendString:<span class="string">@"="</span>];</span><br><span class="line">[result appendString:encodedValue];</span><br><span class="line">&#125;    </span><br><span class="line"><span class="keyword">return</span> [result <span class="keyword">copy</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="built_in">NSString</span>* form_urlencode_HTTP5_String(<span class="built_in">NSString</span>* s) &#123;</span><br><span class="line"><span class="built_in">CFStringRef</span> charactersToLeaveUnescaped = <span class="built_in">CFSTR</span>(<span class="string">" "</span>);</span><br><span class="line"><span class="built_in">CFStringRef</span> legalURLCharactersToBeEscaped = <span class="built_in">CFSTR</span>(<span class="string">"!$&amp;'()+,/:;=?@~"</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSString</span> *result = <span class="built_in">CFBridgingRelease</span>(<span class="built_in">CFURLCreateStringByAddingPercentEscapes</span>(</span><br><span class="line">k<span class="built_in">CFAllocatorDefault</span>,</span><br><span class="line">(__bridge <span class="built_in">CFStringRef</span>)s,</span><br><span class="line">charactersToLeaveUnescaped,</span><br><span class="line">legalURLCharactersToBeEscaped,</span><br><span class="line">k<span class="built_in">CFStringEncodingUTF8</span>));</span><br><span class="line"><span class="keyword">return</span> [result stringByReplacingOccurrencesOfString:<span class="string">@" "</span> withString:<span class="string">@"+"</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">manager.httpManager.requestSerializer.queryStringSerializationWithBlock =</span><br><span class="line">^<span class="built_in">NSString</span>*(<span class="built_in">NSURLRequest</span> *request,</span><br><span class="line"><span class="built_in">NSDictionary</span> *parameters,</span><br><span class="line"><span class="built_in">NSError</span> *__autoreleasing *error) &#123;</span><br><span class="line"><span class="built_in">NSString</span>* encodedParams = form_urlencode_HTTP5_Parameters(parameters);</span><br><span class="line"><span class="keyword">return</span> encodedParams;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">NSURL</span> * url = [<span class="built_in">NSURL</span> URLWithString:<span class="string">@"https://www.google.com"</span>];</span><br><span class="line">AFHTTPRequestOperationManager * requestOperationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:url];</span><br><span class="line"><span class="built_in">dispatch_queue_t</span> requestQueue = dispatch_create_serial_queue_for_name(<span class="string">"kRequestCompletionQueue"</span>);</span><br><span class="line">requestOperationManager.completionQueue = requestQueue;</span><br><span class="line"></span><br><span class="line">AFSecurityPolicy * securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];</span><br><span class="line"></span><br><span class="line"><span class="comment">//allowInvalidCertificates 是否允许无效证书（也就是自建的证书），默认为NO</span></span><br><span class="line"><span class="comment">//如果是需要验证自建证书，需要设置为YES</span></span><br><span class="line">securityPolicy.allowInvalidCertificates = <span class="literal">YES</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//validatesDomainName 是否需要验证域名，默认为YES；</span></span><br><span class="line"><span class="comment">//假如证书的域名与你请求的域名不一致，需把该项设置为NO；如设成NO的话，即服务器使用其他可信任机构颁发的证书，也可以建立连接，这个非常危险，建议打开。</span></span><br><span class="line"><span class="comment">//置为NO，主要用于这种情况：客户端请求的是子域名，而证书上的是另外一个域名。因为SSL证书上的域名是独立的，假如证书上注册的域名是www.google.com，那么mail.google.com是无法验证通过的；当然，有钱可以注册通配符的域名*.google.com，但这个还是比较贵的。</span></span><br><span class="line"><span class="comment">//如置为NO，建议自己添加对应域名的校验逻辑。</span></span><br><span class="line">securityPolicy.validatesDomainName = <span class="literal">YES</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//validatesCertificateChain 是否验证整个证书链，默认为YES</span></span><br><span class="line"><span class="comment">//设置为YES，会将服务器返回的Trust Object上的证书链与本地导入的证书进行对比，这就意味着，假如你的证书链是这样的：</span></span><br><span class="line"><span class="comment">//GeoTrust Global CA </span></span><br><span class="line"><span class="comment">//    Google Internet Authority G2</span></span><br><span class="line"><span class="comment">//        *.google.com</span></span><br><span class="line"><span class="comment">//那么，除了导入*.google.com之外，还需要导入证书链上所有的CA证书（GeoTrust Global CA, Google Internet Authority G2）；</span></span><br><span class="line"><span class="comment">//如是自建证书的时候，可以设置为YES，增强安全性；假如是信任的CA所签发的证书，则建议关闭该验证，因为整个证书链一一比对是完全没有必要（请查看源代码）；</span></span><br><span class="line">securityPolicy.validatesCertificateChain = <span class="literal">NO</span>;</span><br><span class="line"></span><br><span class="line">requestOperationManager.securityPolicy = securityPolicy;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -279,13 +282,13 @@
   
     
     <div class="copyright">
-        <p><span>Title:</span><a href="/2016/04/20/初編/">初編</a></p>
+        <p><span>Title:</span><a href="/2016/05/28/AFN加入HTTPS支持/">AFN加入HTTPS支持</a></p>
         <p><span>Author:</span><a href="/" title="Back to Homepage">Konan Xu</a></p>
-        <p><span>Created:</span>2016-04-20, 10:55:28</p>
-        <p><span>Updated:</span>2016-05-13, 00:20:29</p>
+        <p><span>Created:</span>2016-05-28, 22:43:00</p>
+        <p><span>Updated:</span>2016-05-28, 22:55:19</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2016/04/20/初編/" title="初編">http://yoursite.com/2016/04/20/初編/</a>
-            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2016/04/20/初編/　　By Konan Xu" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2016/05/28/AFN加入HTTPS支持/" title="AFN加入HTTPS支持">http://yoursite.com/2016/05/28/AFN加入HTTPS支持/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2016/05/28/AFN加入HTTPS支持/　　By Konan Xu" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -298,16 +301,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/28/AFN加入HTTPS支持/">
-                    AFN加入HTTPS支持
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/04/14/hello-world/">
-                    Hello World
+                <a href="/2016/04/20/初編/">
+                    初編
                 </a>
             </div>
         
@@ -375,7 +372,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"初編　| Konan's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"AFN加入HTTPS支持　| Konan's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -411,15 +408,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/28/AFN加入HTTPS支持/" title="Pre: AFN加入HTTPS支持">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
         
 
         <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/04/14/hello-world/" title="Next: Hello World">
+            <a href="/2016/04/20/初編/" title="Next: 初編">
                 <i class="fa fa-angle-right"></i>
             </a>
         
